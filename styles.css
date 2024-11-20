@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 20px solid #5c5c5c;
+    justify-content: center;
+    width: calc(60px*8);
+    position: relative;
+}
+
+.black {
+    background-color: #808080;
+}
+
+.white {
+    background-color: white;
+}
+
+.numberLabel:not(.letterLabel) {
+    position: relative;
+    top: 20px;
+    right: 15px;
+}
+
+.letterLabel:not(.numberLabel) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 60px;
+}
+
+.letterLabel:nth-child(2){
+    top: 43px;
+}
